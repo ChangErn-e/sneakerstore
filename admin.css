@@ -1,0 +1,132 @@
+/* admin.css - Modern Payment Management Dashboard */
+
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', Roboto, -apple-system, sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* Header Styles */
+h2 {
+    color: #2c3e50;
+    font-size: 28px;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #7f8184;
+    display: inline-block;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+
+th {
+    background-color: #4a6cf7;
+    color: white;
+    font-weight: 500;
+    text-align: left;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+}
+
+td {
+    padding: 12px 20px;
+    border-bottom: 1px solid #f1f5f9;
+    transition: all 0.2s ease;
+}
+
+tr:hover td {
+    background-color: #f8fafc;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+/* Zebra Striping */
+tr:nth-child(even) {
+    background-color: #f9fafb;
+}
+
+/* Responsive Table */
+@media (max-width: 768px) {
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+}
+
+/* Status Badges - You can add these later */
+.status-paid {
+    background-color: #e3f9e5;
+    color: #1f9254;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.status-pending {
+    background-color: #fef2e5;
+    color: #cd6200;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* Card Number Styling */
+td:nth-child(5) {
+    font-family: monospace;
+    letter-spacing: 1px;
+    color: #4a6cf7;
+}
+
+/* Action Buttons - You can add these later */
+.action-btn {
+    background: none;
+    border: none;
+    color: #64748b;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: color 0.2s;
+}
+
+.action-btn:hover {
+    color: #4a6cf7;
+}
+
+/* Floating Action Button */
+.fab {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #4a6cf7;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(74, 108, 247, 0.3);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.fab:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(74, 108, 247, 0.4);
+}
